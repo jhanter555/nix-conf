@@ -1,13 +1,12 @@
+{ pkgs, ... }:
 {
   imports = [
     ./bufferline.nix
-    ./cmp.nix
     ./copilot-chat.nix
     ./git.nix
     ./lightline.nix
     ./lsp/default.nix
     ./lsp/fidget.nix
-    ./lsp/ionide.nix
     ./lsp/none-ls.nix
     ./lsp/trouble.nix
     ./nvim-tree.nix
@@ -22,7 +21,8 @@
     ./utils/which-key.nix
     ./utils/wilder.nix
   ];
-
+programs.nixvim = {
+  enable = true;
   dependencies.gcc.package = null;
   colorschemes.dracula.enable = true;
   plugins.web-devicons.enable = true;
@@ -32,7 +32,9 @@
   extraConfigVim = ''
     autocmd BufRead,BufNewFile *.pl set filetype=prolog
   '';
-
+  extraPlugins = with pkgs.vimPlugins; [
+    Ionide-vim
+  ];
   globals.mapleader = " ";
   keymaps = [
     # Global
@@ -204,4 +206,5 @@
       options.desc = "Toggle trouble";
     }
   ];
+};
 }

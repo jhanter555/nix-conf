@@ -1,5 +1,6 @@
+{ ... }:
 {
-  plugins.indent-blankline = {
+  programs.nixvim.plugins.indent-blankline = {
     enable = true;
     settings = {
       indent = {

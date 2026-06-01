@@ -17,6 +17,7 @@
     colorschemes.onedark.enable = true;
 
     plugins = {
+      cmp-emoji.enable = false;
       lualine.enable = true;
       telescope.enable = true;
       treesitter = {

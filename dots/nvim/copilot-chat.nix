@@ -1,5 +1,5 @@
 {
-  plugins.copilot-chat = {
+  programs.nixvim.plugins.copilot-chat = {
     enable = true;
   };
 }

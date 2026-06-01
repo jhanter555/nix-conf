@@ -1,5 +1,6 @@
+{ ... }:
 {
-  plugins.fidget = {
+  programs.nixvim.plugins.fidget = {
     enable = true;
     settings.progress = {
       suppress_on_insert = true;

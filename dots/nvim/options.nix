@@ -1,7 +1,7 @@
 { lib, pkgs, ... }:
 
 {
-  config.opts = {
+  programs.nixvim.opts = {
     updatetime = 100; # Faster completion
 
     number = true;

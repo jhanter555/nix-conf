@@ -34,12 +34,14 @@
     alsa.enable = true;
     alsa.support32Bit = true;
     };
-  hardware.pulseaudio.enable = false;
+  services.pulseaudio.enable = false;
   # sys settings
   networking.hostName = "NixOS";
   time.timeZone = "Europe/Kyiv";
   i18n.defaultLocale = "en_US.UTF-8";
   services.fwupd.enable = true;
+
+#  nixpkgs.config.allowUnfree = true;  
   
   # my user
   users.users.dev = {
