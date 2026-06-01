@@ -1,6 +1,9 @@
 { pkgs, ... }:
-
 {
+  imports = [
+    /home/dev/nixos/dots/nvim/default.nix
+  ];
+
   programs.nixvim = {
     enable = true;
 

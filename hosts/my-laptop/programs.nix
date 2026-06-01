@@ -31,6 +31,7 @@
     pciutils
     usbutils
 
+    inputs.nixvim.packages.${system}.default
     discord
     telegram-desktop
 
