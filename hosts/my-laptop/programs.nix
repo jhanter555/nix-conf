@@ -12,8 +12,6 @@
     stdenv.cc.cc
     glibc
     gnumake
-    base
-    base-devel
 
     starship
     fastfetch
@@ -46,10 +44,7 @@
     vulkan-tools
 
     neovim
-    lutris
     protonup-qt
-    heroic
-
     mangohud
     goverlay
 ];
