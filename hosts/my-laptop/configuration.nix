@@ -23,8 +23,8 @@
   ];
   
   # shell
-  users.defaultUserShell = pkgs.zsh;
-  environment.shells = with pkgs; [ zsh ];
+  users.defaultUserShell = pkgs.fish;
+  environment.shells = with pkgs; [ fish ];
 
   # sound
   services.pipewire = {
@@ -41,7 +41,8 @@
   services.fwupd.enable = true;
   
   # my user
-  users.users.tlrf4 = {
+  users.users.dev = {
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager" ];
   };
+}

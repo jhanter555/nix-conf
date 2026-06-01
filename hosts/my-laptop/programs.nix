@@ -5,7 +5,18 @@
     curl
     wget
     qbittorrent
+    go
+    nodejs
+    tree-sitter
+    gcc
+    stdenv.cc.cc
+    glibc
+    gnumake
+    base
+    base-devel
 
+    starship
+    fastfetch
     ncdu
     eza
     bat
@@ -34,25 +45,21 @@
     vulkan-loader
     vulkan-tools
 
+    neovim
     lutris
     protonup-qt
     heroic
 
-    manguhud
+    mangohud
     goverlay
 ];
   programs.firefox.enable = true;
   programs.steam.enable = true;
-  programs.zsh.enable = true;
-  programs.vscode = {
-    enable = true;
-    extensions = with pkgs.vscode-extensions; [
-      dracula-theme.theme-dracula
-      vscodevim.vim
-      yzhang.markdown-all-in-one
-    ];
-};
+  programs.fish.enable = true;
+      
+
    nixpkgs.config.allowUnfree = true;
-   system.stateVersion = "25.11";
+   system.stateVersion = "26.05";
 }
+
 

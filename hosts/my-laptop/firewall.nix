@@ -8,6 +8,5 @@
     allowedUDPPorts = [ ];
     logRefusedConnections = true;
     checkReversePath = "strict";
-    enableIPv6 = true;
   };
 }

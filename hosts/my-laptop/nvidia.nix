@@ -1,13 +1,13 @@
 { config, pkgs, ... }:
 {
   services.xserver.videoDrivers = [ "nvidia" ];
-  hardware.graphics.enable = true;
   hardware.nvidia = {
-    modsettings.enable = true;
+    modesetting.enable = true;
     nvidiaSettings = true;
     open = false;
   };
-  hardware.opengl.enable = true;
-  hardware.opengl.driSupport32Bit = true;
+  hardware.graphics.enable = true;
+  hardware.graphics.enable32Bit = true;
 
 
+}
