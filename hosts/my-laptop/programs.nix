@@ -31,7 +31,6 @@
     pciutils
     usbutils
 
-    inputs.nixvim.packages.${system}.default
     discord
     telegram-desktop
 
@@ -54,7 +53,6 @@
   programs.fish.enable = true;
       
 
-   nixpkgs.config.allowUnfree = true;
    system.stateVersion = "26.05";
 }
 

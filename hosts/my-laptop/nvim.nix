@@ -1,12 +1,12 @@
 { pkgs, ... }:
 {
   imports = [
-    /home/dev/nixos/dots/nvim/default.nix
+    ../../dots/nvim/default.nix
   ];
 
   programs.nixvim = {
     enable = true;
-
+    version.enableNixpkgsReleaseCheck = false;
     globals.mapleader = " ";
 
     opts = {
