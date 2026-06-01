@@ -4,7 +4,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixvim = {
-      url = "github:mikaelfangel/nixvim-config";
+      url = "https://github.com/nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
