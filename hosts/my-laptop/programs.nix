@@ -1,5 +1,5 @@
-{ config, pkgs, ... }:
-{
+{ config, pkgs, inputs, ... }:
+{ imports = [ ./nvim.nix ];
   environment.systemPackages = with pkgs; [
     git
     curl
@@ -39,11 +39,11 @@
     wine
     wine-staging
     winetricks
-
+    
+    python3
     vulkan-loader
     vulkan-tools
 
-    neovim
     protonup-qt
     mangohud
     goverlay

@@ -9,7 +9,6 @@
   ./nvidia.nix
   ./security.nix
   ./programs.nix
-  ./nvim.nix
 ];
   # exp. features
   nix.settings = {
